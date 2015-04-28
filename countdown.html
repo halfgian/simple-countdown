@@ -1,57 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Simple Countdown</title>
-		<script src="countdown.js" type="text/javascript"></script>
-	</head>
-	<a class="site-logo">
-	<img src="images/rightmove_site_logo_strapless.gif" width="198" height="50"></a>
-	<body style="background-color:#EDEDED"/>
-		<script type="application/javascript">
-			var myCountdown1 = new Countdown({
-												year	: 2015, 			// (optional) The target date's year
-												month	: 6, 				// (optional) The target date's month
-												day		: 10, 				// (optional) The target date's day
-												hour	: 0,				// (optional) The target date's hour
-												ampm	: "am",				// (optional) Is the hour refeing to AM (early/day) or PM (late/night)?
-												minute	: 0, 				// (optional) The target date's minutes
-												second	: 0,				// (optional) The target date's seconds 
-												width:1000, 
-												height:350,  
-												hideLabels:false,
-												rangeHi:"day",
-												rangeLo:"hour", /* change to seconds a few days before the Hackathon! would be cool! */
-												labelText	: 	{
-													second 	: "Seconds",
-													minute 	: "Minutes",
-													hour	: "Hours",
-													day 	: "Days",
-												},
-												hideLine:true,
-												style:"boring",
-												numbers	: {
-												font : "Verdana",
-												color	: "#FFFFFF",
-												bkgd	: "#365D8B",
-												rounded	: 0.15,	// percentage of size 
-												shadow	: {
-															   x : 0,	// x offset (in pixels)
-															   y : 3,	// y offset (in pixels)
-															   s : 4,	// spread
-															   c : "#000000",	// color
-															   a : 0.4	// alpha
-														 }
-												},
-												labels	:	{
-													 font  	: "Verdana",
-													 color 	: "#000000",
-													 offset : -50, // Number of pixels to push the labels down away from numbers. 
-													 textScale 	: 0.4, // Percentage of size
-													 weight	: "normal"
-												}
-											});
-			
-		</script>
-	</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <title>Simple Countdown</title>
+    <script src="countdown.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <br> <br>
+    <div class="container" style="position:relative; margin-top:50px;">
+    <div align="center" class="jumbotron">
+      <a class="site-logo">
+        <img src="images/rightmove_site_logo_strapless.gif" width="198" height="50" hspace="20">
+      </a>
+
+      <h1>Hackathon Summer 2015</h1>
+      <br>
+
+      <script type="application/javascript">
+        var myCountdown1 = new Countdown
+          ({
+              year  : 2015,       // (optional) The target date's year
+              month : 6,        // (optional) The target date's month
+              day   : 10,         // (optional) The target date's day
+              hour  : 0,        // (optional) The target date's hour
+              ampm  : "am",       // (optional) Is the hour refeing to AM (early/day) or PM (late/night)?
+              minute  : 0,        // (optional) The target date's minutes
+              second  : 0,        // (optional) The target date's seconds 
+              width:900, 
+              height:300,  
+              hideLabels:false,
+              rangeHi:"day",
+              rangeLo:"hour", /* change to seconds a few days before the Hackathon! would be cool! */
+              labelText :   {
+                second  : "Seconds",
+                minute  : "Minutes",
+                hour  : "Hours",
+                day   : "Days",
+              },
+              hideLine:true,
+              style:"boring",
+              numbers : {
+              font : "Verdana",
+              color : "#FFFFFF",
+              bkgd  : "#365D8B",
+              rounded : 0.00, // percentage of size 
+              shadow  : {
+                       x : 0, // x offset (in pixels)
+                       y : 3, // y offset (in pixels)
+                       s : 4, // spread
+                       c : "#000000", // color
+                       a : 0.4  // alpha
+                   }
+              },
+              labels  : {
+                 font   : "Helvetica",
+                 color  : "#000000",
+                 offset : -40, // Number of pixels to push the labels down away from numbers. 
+                 textScale  : 0.4 // Percentage of size
+              }
+          });
+      </script>
+    </div>
+  </body>
 </html>
