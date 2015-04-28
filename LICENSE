@@ -20,10 +20,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Usage of JavaScript Library, Countdown v5.0 Sept. 3, 2014, by www.gieson.com
-Copyright Mike Gieson as follows.
-
-
+Usage of JavaScript Library, Countdown v5.0 Sept. 3, 2014, by Mike Gieson as
+follows:
 
 ////////////////////////////////////////////
 // 
@@ -158,4 +156,3 @@ var myCD2 = new Countdown({
 					}											// <- no comma on last item!
 
 });
-
